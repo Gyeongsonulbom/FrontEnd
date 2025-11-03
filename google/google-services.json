@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "751595380169",
+    "project_id": "gyeongsonulbom-e7dd8",
+    "storage_bucket": "gyeongsonulbom-e7dd8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751595380169:android:26cf0cca2b55a9c7185c18",
+        "android_client_info": {
+          "package_name": "com.hyunwoo612.Gyeongsonulbom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASyp0Sa8z1dOIVKJ0NW9_OtFALBU7WIkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
