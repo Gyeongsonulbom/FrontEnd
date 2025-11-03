@@ -12,7 +12,7 @@ type MainScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'M
 
 const Main = () => {
   const navigation = useNavigation<MainScreenNavigationProp>();
-  const { colors } = useTheme(); // 현재 theme에서 색상 받아오기
+  const { colors } = useTheme();
 
   const scheme = useColorScheme();
 
@@ -23,13 +23,11 @@ const Main = () => {
 
   if (!fontsLoaded) return null;
 
-  console.log(scheme)
-
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
       <View style={styles.LogoTitle}>
         <Icon width={128} height={128} />
-        <Text style={[ styles.Title, { color: scheme === 'dark' ? '#fff' : '#479BFF'} ] }>경소늘봄</Text>
+        <Text style={[ styles.Title, { color: '#479BFF'} ] }>경소늘봄</Text>
         <Text style={[ styles.SubTitle, { color: scheme === 'dark' ? '#fff' : '#999999'} ]}>도서부 출석체크를 빠르게 완벽하게</Text>
       </View>
       <View style={styles.ButtonContainer}>
@@ -59,6 +57,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Pretendard-SemiBold',
   },
   SubTitle: {
+    fontSize: 16,
     fontFamily: 'Pretendard-Medium',
   },
   ButtonContainer: {
