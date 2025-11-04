@@ -14,9 +14,6 @@ import Calender from '../../assets/calendar.svg'
 import LightCalender from '../../assets/calendar-light.svg'
 import { Shadow } from 'react-native-shadow-2';
 import { Dropdown } from 'react-native-element-dropdown';
-import { format } from 'date-fns';
-import axios from 'axios';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { changeRequestApi } from '../../api/changeRequestApi';
 import { userApi } from '../../api/user';
 
@@ -24,9 +21,7 @@ type DayManagerChangeScreenNavigationProp = NativeStackNavigationProp<RootStackP
 
 const DayManagerChange = () => {
   const [selectedDate, setSelectedDate] = useState<number>();
-  const [toValue, setToValue] = useState(null);
   const [fromValue, setFromValue] = useState(null);
-  const [isFocus, setIsFocus] = useState(false);
   const [toUser, setToUser] = useState<string>();
   const [loading, setLoading] = useState(false);
   const [Reason, setReason] = useState('');
